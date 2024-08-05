@@ -1,0 +1,217 @@
+
+
+img {
+    vertical-align: top;
+}
+ /* color */
+.bg_maroon{background: #742A30;}
+.bg_blue{background: #175288;}
+.bg_green{background: #8afe76;}
+.bg_yellow{background: #d9b44a;}
+.bg_purple{background: #653b74;}
+.bg_white{background: #f3efea;}
+/* bg shadow */
+.sd_maroon{box-shadow: 13px 12px #742A30;}
+.sd_blue{box-shadow: 13px 12px #175288;}
+.sd_green{box-shadow: 13px 12px #4A6545;}
+.sd_yellow{box-shadow: 13px 12px #d9b44a;}
+.sd_purple{box-shadow: 13px 12px #653b74;}
+.sd_white{box-shadow: 13px 12px #f3efea;}
+/* Border */
+.bd_maroon{border: 1px solid #742a30;}
+.bd_blue{border: 1px solid #175288;}
+.bd_green{border: 1px solid #4A6545;}
+.bd_yellow{border: 1px solid #d9b44a;}
+.bd_purple{border: 1px solid #653b74;}
+.bd_white{border: 1px solid #f3efea;}
+
+
+/* container */
+  .container{
+    width: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 20px 0;
+  }
+  .container ul{
+    padding: 0px;
+    margin: 0px;
+  }
+  .container ul li{
+    display: flex;
+    float: left;
+    margin: 40px 0px 0 50px;
+    list-style: none;
+    background: pink;
+    box-sizing: border-box;
+    border: 1px solid #000000;
+    cursor: pointer;
+  }
+  .container ul li:hover{
+    background-image: url(/img/cd_maroon.png);
+    background-position: left;
+  }
+/* content */
+  .ttl_position{
+      margin: 0;
+      padding: 0 3px;
+      color: #ffffff;
+      letter-spacing: 2px;
+      text-align: center;
+      writing-mode: vertical-rl;
+      transform: rotate(180deg);
+    }
+  .cd{
+      position: absolute;
+      opacity: 0;
+  }
+/* modal */
+  .close-modal {
+      position: absolute;
+      top: 1.2rem;
+      right: 2rem;
+      font-size: 5rem;
+      color: #333;
+      cursor: pointer;
+      border: none;
+      background: none;
+  }
+
+/* -------------------------- */
+/* CLASSES TO MAKE MODAL WORK */
+  .hidden {
+    display: none;
+  }
+  .modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    border-radius: 5px;
+    box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+    z-index: 10;
+  }
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(3px);
+    z-index: 5;
+  }
+  .modal_container{
+    display: flex;
+  }
+/* modal content */
+  .page1{
+    flex: 1;
+    height: 450px;
+    overflow: hidden;
+    border: 1px solid #0F0001;
+    border-top-left-radius: 40% 10%;
+    border-top-right-radius: 40% 10%;
+  }
+  .page2{
+    flex: 1;
+    height: 450px;
+    border: 1px solid #0F0001;
+    border-top-left-radius: 40% 10%;
+    border-top-right-radius: 40% 10%;
+  }
+  .page1::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 9%;
+    width: 50%;
+    background: #fff;
+    border-top: 1px solid #0F0001;
+    border-top-left-radius: 40% 100%;
+    border-top-right-radius: 40% 100%;
+    user-select: none;
+  }
+  .page2::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    height: 9%;
+    width: 50%;
+    background: #fff;
+    border-top: 1px solid #0F0001;
+    border-top-left-radius: 40% 100%;
+    border-top-right-radius: 40% 100%;
+    user-select: none;
+  }
+  .label_position{
+    position: absolute;
+    top: 15.5px;
+    text-align: center;
+    color: #fff;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    height: -webkit-fill-available;
+    margin: 0;
+    padding: 0px 16px;
+    border-bottom-right-radius: 239% 18%;
+  }
+
+  .content{
+    padding: 20px 0;
+    text-align: center;
+  }
+  .txt_profile{
+    text-align: center;
+    text-decoration: underline 2px;
+    text-underline-offset: 10px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:1250px) {
+    .container ul li{
+       width: auto;
+    }            
+}
+@media screen and (max-width:857px) {
+    .container{
+        width: 100%;
+        padding: 0;
+    }
+}
+@media screen and (max-width:768px) {
+    .container{
+        width: 100%;
+        padding: 0;
+    }
+    /* .container ul li{
+        float: none;
+        width: 50%;
+        margin: 40px auto;
+    } */
+    
+}
